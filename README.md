@@ -18,7 +18,7 @@ For plant owners, CEOs/CTOs and heads of digital transformation.
 - Workstations for the plant director, process engineer and buyer. People make decisions; the system prepares the options.
 - Works on top of your existing ERP. No system replacement required.
 
-→ Case study: **“Iskra”: AI planning layer over ERP** *(coming soon)*
+→ Case study: [**Iskra — AI planning layer over ERP / MES**](https://github.com/TelelyukhinIgor/iskra-erp-ai-planning): architecture, data model, reference-plant case.
 
 ### 📈 Trading strategies: independent stress testing
 For investors, family offices and traders about to allocate capital to a strategy.
@@ -27,7 +27,9 @@ For investors, family offices and traders about to allocate capital to a strateg
 - Monte Carlo simulation, drawdown distributions, statistical significance of results.
 - A clear report on where the strategy breaks and what that would cost.
 
-→ Methodology: *(coming soon)*
+→ Tools:
+- [**Market Compass**](https://github.com/TelelyukhinIgor/market-compass): research dashboard for price structure across six markets, with persistent levels and Telegram delivery.
+- [**Kronos Workbench**](https://github.com/TelelyukhinIgor/kronos-workbench): local, CPU-first workbench for exploring financial time-series forecasting with the open-source Kronos model.
 
 ---
 
