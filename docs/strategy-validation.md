@@ -31,9 +31,9 @@ Historical frequencies, simulated scenario probabilities, and calibrated predict
 
 ## Research laboratory
 
-A dedicated research laboratory supports the validation workflow. Demonstrations and confidential reviews are arranged individually.
+Demonstrations and confidential reviews are arranged individually.
 
-This page describes the consulting service. It is not a description of [Market Compass](https://github.com/TelelyukhinIgor/market-compass) or [Kronos Workbench](https://github.com/TelelyukhinIgor/kronos-workbench), which are separate published research tools.
+This page describes the consulting service. It is not a description of [Market Compass](https://github.com/TelelyukhinIgor/market-compass), which is a separate published research tool.
 
 ## Confidentiality and first contact
 
