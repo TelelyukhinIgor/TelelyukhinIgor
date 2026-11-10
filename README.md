@@ -39,6 +39,6 @@ Public repositories here demonstrate architecture, data models and research tool
 
 Send a short description of the problem or decision you need help with. For a strategy review, describe the available evidence first; do not send credentials or confidential strategy files through public issues.
 
-[Email](mailto:telelyhina@icloud.com) · [LinkedIn](https://www.linkedin.com/in/igor-telelyukhin/)
+[Email](mailto:igor@telelyukhin.com) · [LinkedIn](https://www.linkedin.com/in/igor-telelyukhin/)
 
 Ljubljana, Slovenia · remote · English / Russian
