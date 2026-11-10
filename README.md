@@ -6,48 +6,39 @@ Roles, specs, memory, cross-checks, and a human go/no-go on every costly decisio
 
 For business owners, I turn operational pain into numbers and a clear solution design. For technical teams, I bring architecture, data models and explicit limits of applicability.
 
----
+## How I can help
 
-## Applied examples
+**Business systems and AI workflows**  
+Diagnose bottlenecks, structure incomplete information, and design workflows that fit existing operations. Typical areas include manufacturing, ERP/MRP, planning, logistics, and decision support.
 
-### 🏭 Manufacturing: AI planning layer on top of ERP / MES
-For plant owners, CEOs/CTOs and heads of digital transformation.
+**Independent trading strategy validation**  
+Review backtest integrity, execution assumptions, overfitting, tail risk, and robustness before deployment or capital allocation. Where the evidence supports it, estimate probabilities of explicitly defined outcomes, with the assumptions and uncertainty stated alongside the estimate.
 
-- Production planning end to end: order → routings → machine load → procurement → cash flow, in one day instead of a week in spreadsheets.
-- AI-assisted reading of drawings and bills of materials, generation of routing cards.
-- Workstations for the plant director, process engineer and buyer. People make decisions; the system prepares the options.
-- Works on top of your existing ERP. No system replacement required.
+[Strategy validation: scope and deliverables](docs/strategy-validation.md)
 
-→ Case study: [**Iskra — AI planning layer over ERP / MES**](https://github.com/TelelyukhinIgor/iskra-erp-ai-planning): architecture, data model, reference-plant case.
+## Selected work
 
-### 📈 Trading strategies: independent stress testing
-For investors, family offices and traders about to allocate capital to a strategy.
+| Project | What it demonstrates | Status |
+|---|---|---|
+| [Iskra](https://github.com/TelelyukhinIgor/iskra-erp-ai-planning) | AI-assisted production planning over existing ERP/MES; architecture and data models | Reference design; modelled outcomes |
+| [Market Compass](https://github.com/TelelyukhinIgor/market-compass) | Multi-market research dashboard, price structure, persistent levels, and Telegram charts | Research prototype; source published |
+| [Kronos Workbench](https://github.com/TelelyukhinIgor/kronos-workbench) | Local CPU research workflow around Kronos, scenario paths, and data-quality checks | Research prototype; source published |
 
-- Detection of hidden tail risk: martingale, grid systems, curve fitting.
-- Monte Carlo simulation, drawdown distributions, statistical significance of results.
-- A clear report on where the strategy breaks and what that would cost.
-
-→ Tools:
-- [**Market Compass**](https://github.com/TelelyukhinIgor/market-compass): research dashboard for price structure across six markets, with persistent levels and Telegram delivery.
-- [**Kronos Workbench**](https://github.com/TelelyukhinIgor/kronos-workbench): local, CPU-first workbench for exploring financial time-series forecasting with the open-source Kronos model.
-
----
+These projects illustrate different parts of my engineering work. Market Compass and Kronos Workbench are not the strategy-validation laboratory itself.
 
 ## How I work
 
-1. **Pain and goal.** What exactly you are losing, and how we will measure the result.
-2. **Diagnosis.** Find the key system constraint, not the symptoms.
-3. **Architecture and pilot.** Roles for people and AI models, specs, checks. On your data first, then scale.
-4. **Handover.** Documentation, decision journal and team training.
+1. Define the problem, decision, and measurable outcome.
+2. Find the system constraint and inspect the available evidence.
+3. Design and test the smallest useful solution.
+4. Hand over the result, assumptions, limitations, and next actions.
 
-Public repositories here demonstrate architecture, data models and methodology. Production models, algorithms and integrations are provided under contract.
-
----
+Public repositories here demonstrate architecture, data models and research tools. Production models, algorithms and integrations are provided under contract.
 
 ## Contact
 
-Send me one sentence about where AI is stuck in your work. I'll tell you honestly whether I can help.
+Send a short description of the problem or decision you need help with. For a strategy review, describe the available evidence first; do not send credentials or confidential strategy files through public issues.
 
-✉️ [telelyhina@icloud.com](mailto:telelyhina@icloud.com) · 💼 [LinkedIn](https://www.linkedin.com/in/igor-telelyukhin/)
+[Email](mailto:telelyhina@icloud.com) · [LinkedIn](https://www.linkedin.com/in/igor-telelyukhin/)
 
-📍 Ljubljana, Slovenia · remote · English / Russian
+Ljubljana, Slovenia · remote · English / Russian
