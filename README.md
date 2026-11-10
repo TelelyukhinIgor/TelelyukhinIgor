@@ -21,8 +21,8 @@ Review backtest integrity, execution assumptions, overfitting, tail risk, and ro
 | Project | What it demonstrates | Status |
 |---|---|---|
 | [Iskra](https://github.com/TelelyukhinIgor/iskra-erp-ai-planning) | AI-assisted production planning over existing ERP/MES; architecture and data models | Reference design; modelled outcomes |
-| [Market Compass](https://github.com/TelelyukhinIgor/market-compass) | Multi-market research dashboard, price structure, persistent levels, and Telegram charts | Research prototype; source published |
-| [Kronos Workbench](https://github.com/TelelyukhinIgor/kronos-workbench) | Local CPU research workflow around Kronos, scenario paths, and data-quality checks | Research prototype; source published |
+| [Market Compass](https://github.com/TelelyukhinIgor/market-compass) | Multi-market research dashboard, price structure, persistent levels, and Telegram charts | Research prototype; code available under a non-commercial license |
+| [Kronos Workbench](https://github.com/TelelyukhinIgor/kronos-workbench) | Local CPU research workflow around Kronos, scenario paths, and data-quality checks | Research prototype; code available under a non-commercial license |
 
 These projects illustrate different parts of my engineering work. Market Compass and Kronos Workbench are not the strategy-validation laboratory itself.
 
@@ -33,7 +33,7 @@ These projects illustrate different parts of my engineering work. Market Compass
 3. Design and test the smallest useful solution.
 4. Hand over the result, assumptions, limitations, and next actions.
 
-Public repositories here demonstrate architecture, data models and research tools. Production models, algorithms and integrations are provided under contract.
+Public repositories here demonstrate architecture, data models and research tools. Production models, algorithms and integrations can be licensed under contract.
 
 ## Contact
 
