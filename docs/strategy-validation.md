@@ -39,6 +39,6 @@ This page describes the consulting service. It is not a description of [Market C
 
 Start with a short description of the strategy, the decision, and the evidence available. Confidential files are exchanged through an agreed private channel. Do not post code, account details, credentials, or trade histories in public GitHub issues.
 
-[Email](mailto:telelyhina@icloud.com) · [LinkedIn](https://www.linkedin.com/in/igor-telelyukhin/)
+[Email](mailto:igor@telelyukhin.com) · [LinkedIn](https://www.linkedin.com/in/igor-telelyukhin/)
 
 Ljubljana, Slovenia · remote · English / Russian
