@@ -16,6 +16,8 @@ Review backtest integrity, execution assumptions, overfitting, tail risk, and ro
 
 [Strategy validation: scope and deliverables](docs/strategy-validation.md)
 
+[Case study: testing AI trading agents against a random control before trusting them with money](docs/ai-model-validation-case.md)
+
 ## Selected work
 
 | Project | What it demonstrates | Status |
