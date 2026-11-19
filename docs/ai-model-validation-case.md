@@ -3,7 +3,7 @@
 *A case study in validating AI agents where mistakes are expensive.*
 
 <p align="center">
-  <img src="img/random-control-chimp.jpg" alt="A chimpanzee, a nod to the random control" width="560">
+  <img src="img/random-control-chimp.jpg" alt="A chimpanzee, a nod to the Monkey and the Coin Flip" width="560">
 </p>
 
 **The short version.** I used AI and my own validation lab to test several AI trading agents under one frozen protocol, against a random baseline and a simple rule. The AI agents did not beat the simple rule, and they finished close to random. A result like that is cheap to get in a simulation and expensive to learn with real capital. I recommend running this kind of test before any AI is given a role where errors cost money.
@@ -20,15 +20,15 @@ Simulated trading is a convenient test bed: the cost of being wrong shows up dir
 
 ## The setup
 
-All participants were tested on the same market data under the same rules, in a simulation (no real money, no live trading).
+All participants were tested on the same market data under the same rules, in a simulation (no real money, no live trading). All participants were simulated: each trader profile was played by an AI agent or a mechanical rule, not by a person.
 
 | Participant | What it is |
 |---|---|
-| **H** | An AI agent in its own isolated conversation, with a calm, analytical profile |
-| **HC** | The same AI agent, plus one independent AI adviser consultation per session |
-| **M** | A separate AI agent with a deliberately emotional profile: fearful, greedy, impatient |
-| **SMA20** | A simple mechanical moving-average rule, used as the benchmark |
-| **Random control** | 1,000 independent random runs under the same protections |
+| **Ideal Trader** | An AI agent playing a calm, disciplined trader |
+| **Ideal Trader + AI Adviser** | The same AI agent, plus one independent AI adviser consultation per session |
+| **Monkey** | An AI agent playing a nervous, careless trader; deliberately emotional: fearful, greedy, impatient |
+| **Simple Rule** (SMA20) | A plain moving-average rule |
+| **Coin Flip** | 1,000 independent random runs under the same protections |
 
 Every participant had the same risk limits and the same trading costs. Each AI agent made its own decisions, one step at a time, and could not see the future.
 
@@ -51,9 +51,9 @@ Fingerprints (SHA-256) of the frozen protocol and of the saved AI answers:
 | Item | SHA-256 |
 |---|---|
 | Frozen protocol | `588fd2da5d0fefdce000f25cc51a005493c4743bc1876af77fd85828d1460f4b` |
-| Saved answers, H | `049b26f56bc3397a0837433f980dfe7779ec2bd2cfa6d0c5407d11d5f02ad48c` |
-| Saved answers, HC | `6582682844aa3f270a503bc9a67c4e274368164da604e7f0d11680c374102251` |
-| Saved answers, M | `10a2bafbe7f77e13b99877cabec36f711ed5fcf3d8ebb2df432a26b4554c7954` |
+| Saved answers, Ideal Trader | `049b26f56bc3397a0837433f980dfe7779ec2bd2cfa6d0c5407d11d5f02ad48c` |
+| Saved answers, Ideal Trader + AI Adviser | `6582682844aa3f270a503bc9a67c4e274368164da604e7f0d11680c374102251` |
+| Saved answers, Monkey | `10a2bafbe7f77e13b99877cabec36f711ed5fcf3d8ebb2df432a26b4554c7954` |
 
 ## The result
 
@@ -61,19 +61,19 @@ Hourly GBP/USD, July to August 2018: 45 full trading sessions and 360 decision s
 
 | Participant | Return | Max drawdown | Trades | Finished ahead of this share of the 1,000 random runs |
 |---|---:|---:|---:|---:|
-| SMA20 (simple rule) | **+0.75%** | 3.41% | 47 | 88.2% |
-| H (AI agent) | −3.75% | 3.77% | 58 | 46.8% |
-| HC (AI agent + adviser) | −3.99% | 4.27% | 51 | 42.9% |
-| M (emotional AI persona) | −5.53% | 6.31% | 79 | 19.1% |
+| **Simple Rule** | **+0.75%** | 3.41% | 47 | 88.2% |
+| **Ideal Trader** | −3.75% | 3.77% | 58 | 46.8% |
+| **Ideal Trader + AI Adviser** | −3.99% | 4.27% | 51 | 42.9% |
+| **Monkey** | −5.53% | 6.31% | 79 | 19.1% |
 
-The random control had a median return of **−3.47%**. Its 5th to 95th percentile range ran from −6.05% to +2.79%, and 168 of the 1,000 random runs ended in profit.
+The Coin Flip had a median return of **−3.47%**. Its 5th to 95th percentile range ran from −6.05% to +2.79%, and 168 of the 1,000 random runs ended in profit.
 
 **In plain terms:**
 
-- The AI agents did **not** beat the simple rule. Only SMA20 ended in profit.
-- H and HC ended close to the middle of the random distribution. They beat 46.8% and 42.9% of random runs.
-- The emotional persona (M) did worse than most random runs. It traded the most, then hit the protocol's irreversible loss halt in early August and was stopped. The halt is by design and was not reset to let it trade more.
-- The adviser did not help: HC finished 0.25 percentage points behind H. Part of that gap is ordinary run-to-run variation in AI answers, so it is not a clean measure of the adviser.
+- The AI agents did **not** beat the simple rule. Only Simple Rule ended in profit.
+- Ideal Trader and Ideal Trader + AI Adviser ended close to the middle of the random distribution. They beat 46.8% and 42.9% of random runs.
+- Monkey did worse than most random runs. It traded the most, then hit the protocol's irreversible loss halt in early August and was stopped. The halt is by design and was not reset to let it trade more.
+- The adviser did not help: Ideal Trader + AI Adviser finished 0.25 percentage points behind Ideal Trader. Part of that gap is ordinary run-to-run variation in AI answers, so it is not a clean measure of the adviser.
 
 ## What this does not show
 
